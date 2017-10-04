@@ -9,11 +9,12 @@ class StatSerializer
 
   def serialize_monthly
     distance = @rides.sum(:distance)
+
     distance.map do |date, ride|
       { day: date.strftime("%B, #{date.day.ordinalize}"),
         total_distance: "#{ride}km",
         avg_ride: "#{@rides.average(:distance)[date]}km",
-        avg_price: "#{@rides.average(:price)[date]}PLN" } if ride > 0
+        avg_price: "#{@rides.average(:price)[date]}PLN" }
     end.compact
   end
 end

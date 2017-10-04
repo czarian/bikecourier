@@ -3,8 +3,9 @@ class Api::StatsController < ApplicationController
     @rides = Ride.this_week if params[:period] == 'weekly'
     @rides = Ride.this_month.group_by_day(:date) if params[:period] == 'monthly'
     statistics
-
   end
+
+  private
 
   def statistics
     params[:period] == 'weekly' ? render_weekly : render_monthly
