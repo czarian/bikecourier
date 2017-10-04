@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api do
+    resources :rides, only: [:create]
+    scope :stats do
+      get ':period', to: 'stats#index'
+    end
+  end
 end
