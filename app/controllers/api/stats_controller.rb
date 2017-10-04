@@ -11,19 +11,11 @@ class Api::StatsController < ApplicationController
   end
 
   def render_monthly
-
-    distance = @rides.sum(:distance)
-    json = distance.map do |date, ride|
-      { day: date.strftime("%B, #{date.day.ordinalize}"),
-        total_distance: "#{ride}km",
-        avg_ride: "#{@rides.average(:distance)[date]}km",
-        avg_price: "#{@rides.average(:price)[date]}PLN" } if ride > 0
-    end.compact
-
-    render json: json, status: :ok
+    stats = StatSerializer.new(@rides).serialize_monthly
+    render json: stats, status: :ok
   end
 
   def render_weekly
-    render json: { total_distance: @rides.sum(:distance), total_price: @rides.sum(:price) }, status: :ok
+    render json: StatSerializer.new(@rides).serialize_weekly, status: :ok
   end
 end
