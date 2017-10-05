@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Geocode do
+RSpec.describe Geocode, :vcr do
   let(:start_address) { 'Plac europejski 2, Warszawa, Polska' }
   let(:destination_address) { 'Plac zamkowy 1, Warszawa, Polska' }
 

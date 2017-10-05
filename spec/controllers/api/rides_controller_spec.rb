@@ -7,13 +7,13 @@ RSpec.describe Api::RidesController, type: :controller do
                    date: DateTime.now } }
 
 
-  it 'creates new ride' do
+  it 'creates new ride', :vcr do
     response = post :create, { params: { ride: params } }
 
     expect(response).to have_http_status(:created)
   end
 
-  context 'with invalid address' do
+  context 'with invalid address', :vcr do
     let(:params) { { address_start: 'Nie ma takiego bicia, Warszawa, Polska',
                      address_end: 'Plac Zamkowy 2, Warszawa, Polska',
                      price: 33.5,

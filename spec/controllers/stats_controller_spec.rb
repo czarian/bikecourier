@@ -6,7 +6,7 @@ RSpec.describe Api::StatsController, type: :controller do
       create_list(:ride, 3)
     end
 
-    describe 'index' do
+    describe 'index'  do
       it 'gets status ok' do
         response = get :index, { params: { period: 'weekly' } }
         expect(response).to have_http_status(:ok)
