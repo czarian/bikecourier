@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Geocode, :vcr do
+RSpec.describe DistanceReciever, :vcr do
   let(:start_address) { 'Plac europejski 2, Warszawa, Polska' }
   let(:destination_address) { 'Plac zamkowy 1, Warszawa, Polska' }
 

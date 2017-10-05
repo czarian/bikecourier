@@ -1,6 +1,6 @@
 require 'google_maps_service'
 
-class Geocode
+class DistanceReciever
   def initialize(start_address, destination_address)
     @gmaps = GoogleMapsService::Client.new(key: ENV['GOOGLE_API_KEY'])
 

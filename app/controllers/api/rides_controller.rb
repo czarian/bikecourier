@@ -1,7 +1,7 @@
 class Api::RidesController < ApplicationController
   def create
     ride = Ride.new(ride_params)
-    ride.distance = Geocode.new(ride_params[:address_start],
+    ride.distance = DistanceReciever.new(ride_params[:address_start],
                                 ride_params[:address_end]).call
 
     if ride.save
