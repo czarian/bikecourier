@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=Nie%20ma%20takiego%20bicia,%20Warszawa,%20Polska&key=AIzaSyBGHRJqZiB6iX5c-Iijqtb5B2lizgVFRQs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - google-maps-services-ruby/0.4.2 Mac OS X/10.12.6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 05 Oct 2017 12:28:29 GMT
+      Expires:
+      - Fri, 06 Oct 2017 12:28:29 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '65'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="39,38,37,35"
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [],
+           "status" : "ZERO_RESULTS"
+        }
+    http_version: 
+  recorded_at: Thu, 05 Oct 2017 12:28:28 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=Plac%20Zamkowy%202,%20Warszawa,%20Polska&key=AIzaSyBGHRJqZiB6iX5c-Iijqtb5B2lizgVFRQs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - google-maps-services-ruby/0.4.2 Mac OS X/10.12.6
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 05 Oct 2017 12:28:29 GMT
+      Expires:
+      - Fri, 06 Oct 2017 12:28:29 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      Content-Length:
+      - '505'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="39,38,37,35"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICAicmVzdWx0cyIgOiBbCiAgICAgIHsKICAgICAgICAgImFkZHJlc3NfY29tcG9uZW50cyIgOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgImxvbmdfbmFtZSIgOiAiMiIsCiAgICAgICAgICAgICAgICJzaG9ydF9uYW1lIiA6ICIyIiwKICAgICAgICAgICAgICAgInR5cGVzIiA6IFsgInN0cmVldF9udW1iZXIiIF0KICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICAibG9uZ19uYW1lIiA6ICJwbGFjIFphbWtvd3kiLAogICAgICAgICAgICAgICAic2hvcnRfbmFtZSIgOiAicGxhYyBaYW1rb3d5IiwKICAgICAgICAgICAgICAgInR5cGVzIiA6IFsgInJvdXRlIiBdCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgImxvbmdfbmFtZSIgOiAixZpyw7NkbWllxZtjaWUiLAogICAgICAgICAgICAgICAic2hvcnRfbmFtZSIgOiAixZpyw7NkbWllxZtjaWUiLAogICAgICAgICAgICAgICAidHlwZXMiIDogWyAicG9saXRpY2FsIiwgInN1YmxvY2FsaXR5IiwgInN1YmxvY2FsaXR5X2xldmVsXzEiIF0KICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICAibG9uZ19uYW1lIiA6ICJXYXJzemF3YSIsCiAgICAgICAgICAgICAgICJzaG9ydF9uYW1lIiA6ICJXYXJzemF3YSIsCiAgICAgICAgICAgICAgICJ0eXBlcyIgOiBbICJsb2NhbGl0eSIsICJwb2xpdGljYWwiIF0KICAgICAgICAgICAgfSwKICAgICAgICAgICAgewogICAgICAgICAgICAgICAibG9uZ19uYW1lIiA6ICJXYXJzemF3YSIsCiAgICAgICAgICAgICAgICJzaG9ydF9uYW1lIiA6ICJXYXJzemF3YSIsCiAgICAgICAgICAgICAgICJ0eXBlcyIgOiBbICJhZG1pbmlzdHJhdGl2ZV9hcmVhX2xldmVsXzIiLCAicG9saXRpY2FsIiBdCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgImxvbmdfbmFtZSIgOiAibWF6b3dpZWNraWUiLAogICAgICAgICAgICAgICAic2hvcnRfbmFtZSIgOiAibWF6b3dpZWNraWUiLAogICAgICAgICAgICAgICAidHlwZXMiIDogWyAiYWRtaW5pc3RyYXRpdmVfYXJlYV9sZXZlbF8xIiwgInBvbGl0aWNhbCIgXQogICAgICAgICAgICB9LAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICJsb25nX25hbWUiIDogIlBvbGFuZCIsCiAgICAgICAgICAgICAgICJzaG9ydF9uYW1lIiA6ICJQTCIsCiAgICAgICAgICAgICAgICJ0eXBlcyIgOiBbICJjb3VudHJ5IiwgInBvbGl0aWNhbCIgXQogICAgICAgICAgICB9CiAgICAgICAgIF0sCiAgICAgICAgICJmb3JtYXR0ZWRfYWRkcmVzcyIgOiAicGxhYyBaYW1rb3d5IDIsIFdhcnN6YXdhLCBQb2xhbmQiLAogICAgICAgICAiZ2VvbWV0cnkiIDogewogICAgICAgICAgICAibG9jYXRpb24iIDogewogICAgICAgICAgICAgICAibGF0IiA6IDUyLjI0NzI2NTYsCiAgICAgICAgICAgICAgICJsbmciIDogMjEuMDE2MjA0MwogICAgICAgICAgICB9LAogICAgICAgICAgICAibG9jYXRpb25fdHlwZSIgOiAiUk9PRlRPUCIsCiAgICAgICAgICAgICJ2aWV3cG9ydCIgOiB7CiAgICAgICAgICAgICAgICJub3J0aGVhc3QiIDogewogICAgICAgICAgICAgICAgICAibGF0IiA6IDUyLjI0ODYxNDU4MDI5MTUsCiAgICAgICAgICAgICAgICAgICJsbmciIDogMjEuMDE3NTUzMjgwMjkxNQogICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAic291dGh3ZXN0IiA6IHsKICAgICAgICAgICAgICAgICAgImxhdCIgOiA1Mi4yNDU5MTY2MTk3MDg1LAogICAgICAgICAgICAgICAgICAibG5nIiA6IDIxLjAxNDg1NTMxOTcwODUKICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgIH0sCiAgICAgICAgICJwbGFjZV9pZCIgOiAiQ2hJSi02TUJMMmJNSGtjUnRBWXVrTTlhWW9vIiwKICAgICAgICAgInR5cGVzIiA6IFsgInN0cmVldF9hZGRyZXNzIiBdCiAgICAgIH0KICAgXSwKICAgInN0YXR1cyIgOiAiT0siCn0K
+    http_version: 
+  recorded_at: Thu, 05 Oct 2017 12:28:28 GMT
+recorded_with: VCR 3.0.3
