@@ -19,6 +19,7 @@ gem 'google_maps_service'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'dotenv-rails'
+  gem 'factory_girl_rails'
 end
 
 group :development do
@@ -31,7 +32,6 @@ end
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'factory_girl_rails'
   gem 'ffaker'
   gem 'rspec-rails'
   gem 'rails-controller-testing'
