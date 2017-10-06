@@ -7,7 +7,18 @@ class Ride < ApplicationRecord
     where("date >= ?", Time.zone.now.beginning_of_week)
   end
 
+  def self.weekly
+    select("date, COALESCE(SUM(rides.distance), 0) as total_distance,
+            COALESCE(SUM(rides.price), 0) as total_price").this_week.first
+  end
+
   def self.this_month
     where("created_at >= ?", Time.zone.now.beginning_of_month)
+  end
+
+  def self.monthly
+    select("date, SUM(rides.distance) as total_distance,
+            AVG(rides.distance) as avarage_distance,
+            AVG(rides.price) as avarage_price").this_month.group("date(date)")
   end
 end
